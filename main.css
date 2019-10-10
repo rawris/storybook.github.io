@@ -141,10 +141,34 @@
     font-size: 12px !important; } }
 
 .new-variant-container {
-  max-width: 300px; }
+  max-width: 300px;
+  min-width: 300px; }
 
 .list-item {
   word-break: break-all; }
+
+.list-search-suggestion {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 3;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  max-height: 150px;
+  overflow: auto; }
+
+.list-search-container {
+  position: relative; }
+
+.list-search-suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none; }
+
+.list-search-suggestion-item:last-child {
+  border-bottom: none; }
 
 .tab-item {
   outline: none;
